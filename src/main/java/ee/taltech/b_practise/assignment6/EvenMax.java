@@ -24,8 +24,7 @@ public class EvenMax {
             if (params.isEmpty()) {
                 return null;
             } else {
-                Integer max = params.stream().mapToInt(v -> v).max().orElseThrow(NoSuchElementException::new);
-                return max;
+                return params.stream().mapToInt(v -> v).max().orElseThrow(NoSuchElementException::new);
             }
         }
     }
@@ -34,9 +33,9 @@ public class EvenMax {
     // You can observe it on tests as: _null_is_maximum_of_no_numbers, _null_is_maximum_of_odd_numbers
     // Can you name 2 different ways developer could have solved these differently?
     // (There should be more than 2 options, but naming 2 is enough)
-    // 1
-    // 2
+    // 1 Return an empty array
+    // 2 Throw an exception
     //todo E
     // Which option would you prefer and why?
-    // Answer:
+    // Answer: Out of the 2 options I provided, expections would make a more clearer explanation to the error, but I like nulls due to their simplicity
 }
