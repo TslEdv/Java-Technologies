@@ -1,6 +1,6 @@
 package ee.taltech.c_extra.problem2;
 
-//import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class Dependency {
 
@@ -10,14 +10,14 @@ public class Dependency {
 
     //todo B
     // In the context of A, can you explain in your words what is a dependency?
-    // Answer:
+    // Answer: it is a set of code that can be used for by other programs, ie this program depends on StringUtils because it uses code from it
     //
     //
     //todo C
     // Can this project "ics0014-2020-test1" become a dependency?
-    // Answer: Yes/No
+    // Answer: Yes
 
     public static void main(String[] args) {
-        //boolean notBlank = StringUtils.isNotBlank("       ");
+        boolean notBlank = StringUtils.isNotBlank("       ");
     }
 }
