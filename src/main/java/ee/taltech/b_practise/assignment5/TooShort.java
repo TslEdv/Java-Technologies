@@ -17,6 +17,9 @@ public class TooShort {
      */
     public static List<String> filter(List<String> strings, int length) {
         List<String> filtered = new ArrayList<>();
+        if (strings == null){
+            throw new IllegalArgumentException("Invalid input");
+        }
         if (length <= 0) {
             return strings;
         }

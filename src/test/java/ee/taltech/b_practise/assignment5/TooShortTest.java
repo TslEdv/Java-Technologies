@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class TooShortTest {
 
@@ -42,6 +43,10 @@ class TooShortTest {
                 TooShort.filter(TEST_STRINGS, 5));
     }
 
+    @Test
+    void on_null_return_exception() {
+        assertThrows(IllegalArgumentException.class, () -> TooShort.filter(null, 0));
+    }
     //todo 2 you decide what happens on null input list, write a test and logic :)
     // don't worry about nulls inside the list ("Hello", null, "World")
 }
