@@ -1,5 +1,6 @@
 package ee.taltech.b_practise.assignment5;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TooShort {
@@ -14,7 +15,16 @@ public class TooShort {
     /**
      * returns a list of string where length of a string is bigger than length (>)
      */
-    public static List<String> filter(List<String> strings, int length){
-        return strings;
+    public static List<String> filter(List<String> strings, int length) {
+        List<String> filtered = new ArrayList<>();
+        if (length <= 0) {
+            return strings;
+        }
+        for (String string : strings) {
+            if (string.length() > length){
+                filtered.add(string);
+            }
+        }
+        return filtered;
     }
 }
