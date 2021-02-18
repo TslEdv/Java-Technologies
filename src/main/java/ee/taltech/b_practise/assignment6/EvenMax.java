@@ -1,6 +1,9 @@
 package ee.taltech.b_practise.assignment6;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.stream.Collectors;
 
 public class EvenMax {
 
@@ -14,7 +17,17 @@ public class EvenMax {
      * for example 2, -6, 128, 2n
      */
     public static Integer maximum(List<Integer> params) {
-        return params.get(0);
+        if ((params == null) || (params.isEmpty())) {
+            return null;
+        } else {
+            params = params.stream().filter(n -> n % 2 == 0).collect(Collectors.toList());
+            if (params.isEmpty()) {
+                return null;
+            } else {
+                Integer max = params.stream().mapToInt(v -> v).max().orElseThrow(NoSuchElementException::new);
+                return max;
+            }
+        }
     }
 
     //todo D programmer has designed to return null on null/empty input

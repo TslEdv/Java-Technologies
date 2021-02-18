@@ -10,7 +10,15 @@ public class Fullname {
     //todo C use streams (extra)
 
     public static String fullname(String firstName, String lastName) {
-        return "";
+        if ((firstName.isEmpty() && lastName.isEmpty())|| (firstName.equals(null)&&lastName.equals(null))) {
+            return "";
+        } else if (lastName.equals("")||lastName.equals(null)) {
+            return firstName;
+        } else if (firstName.equals("")||firstName.equals(null)) {
+            return lastName;
+        } else {
+            return firstName + " " + lastName;
+        }
     }
 
 
