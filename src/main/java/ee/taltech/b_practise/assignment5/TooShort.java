@@ -2,6 +2,7 @@ package ee.taltech.b_practise.assignment5;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class TooShort {
 
@@ -20,14 +21,8 @@ public class TooShort {
         if (strings == null){
             throw new IllegalArgumentException("Invalid input");
         }
-        if (length <= 0) {
-            return strings;
-        }
-        for (String string : strings) {
-            if (string.length() > length){
-                filtered.add(string);
-            }
-        }
-        return filtered;
+        return strings.stream()
+                .filter(e -> e.length() > length)
+                .collect(Collectors.toList());
     }
 }
