@@ -16,7 +16,7 @@ public class Filter {
      * divides integer input into positives and negatives
      * zero 0, can be treated as positive
      */
-    public PositivesAndNegatives filterToPositivesAndNegatives(List<Integer> numbers){
+    public static PositivesAndNegatives filterToPositivesAndNegatives(List<Integer> numbers){
         if (numbers == null){
             throw new IllegalArgumentException("Invalid input");
         }
