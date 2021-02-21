@@ -9,25 +9,31 @@ public class PseudoCode2 {
     //  pseudo code is "a notation resembling a simplified programming language, used in program design."
     //
     //todo A
-    // 1
-    // 2
-    // 3
-    // 4
+    // 1 String sushi = "crab";
+    // 2 order(sushi);
+    // 3 eat(sushi);
+    // 4 do(homework);
     // 5
-    // 6
-    // 7
-    // 8
-    // 9
-    // 10
-    // 11
-    // 12
-    //
+    // 6 while (true){
+    // 7    if (java == "done"){
+    // 8        break;
+    // 9    } else {
+    // 10       do(java);
+    // 11   }
+    // 12 }
+    // 13 sleep();
 
     //todo B
     // Write pseudo codo for 2 tests for your code
     //
-    //
-    //
+    //    @Test
+    //    void sushieaten() {
+    //        assertEquals("food is gone", PseudoCode2.eat("sushi"));
+    //    }
+    //    @Test
+    //    void order() {
+    //        assertEquals("Your food crab sushi will arrive by 6", PseudoCode2.order("crab sushi"));
+    //    }
     //
     //
     //
