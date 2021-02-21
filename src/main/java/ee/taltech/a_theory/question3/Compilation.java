@@ -16,7 +16,7 @@ public class Compilation {
     // Benefits:
     // 1 you can write code and compile it on JVM and run it anywhere, if anyone wants to access it ,
     // person needs to have JVM for that.
-    // 2 compiles easily on other operating systems, because Java bytecode runs anywhere where is its enviroment.
+    // 2 compiles easily on other operating systems, because Java bytecode runs anywhere where is its environment.
     //todo C
     // Name 1 disadvantage of compilation?
     // Disadvantage:
