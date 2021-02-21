@@ -3,6 +3,7 @@ package ee.taltech.b_practise.assignment6;
 import java.util.Arrays;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class EvenMax {
@@ -33,7 +34,7 @@ public class EvenMax {
     // You can observe it on tests as: _null_is_maximum_of_no_numbers, _null_is_maximum_of_odd_numbers
     // Can you name 2 different ways developer could have solved these differently?
     // (There should be more than 2 options, but naming 2 is enough)
-    // 1 Return an empty array
+    // 1 Return a 0
     // 2 Throw an exception
     //todo E
     // Which option would you prefer and why?
