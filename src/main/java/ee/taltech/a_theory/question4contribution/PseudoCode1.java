@@ -9,31 +9,31 @@ public class PseudoCode1 {
     //  pseudo code is "a notation resembling a simplified programming language, used in program design."
     //
     //todo A
-    // 1
-    // 2
-    // 3
-    // 4
-    // 5
-    // 6
-    // 7
-    // 8
-    // 9
-    // 10
-    // 11
-    // 12
+    // 1 getUp();
+    // 2 putOn(List.of(underpants, shirt, pants, socks, glasses);
+    // 3 goTo(Bathroom);
+    // 4 brushTeeth();
+    // 5 goTo(Kitchen);
+    // 6 eat(breakfast);
+    // 7 if (motivation) {
+    // 8    while (timeToNextBus > 10){
+    // 9            wait();
+    // 10   }
+    // 11   goTo(Work);
+    // 12}
     //
 
     //todo B
     // Write pseudo codo for 2 tests for your code
+    // @Test
+    // void are_glasses_on(){
+    //  assertEquals(4K, vision.getResolution());
+    //}
     //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
+    //@Test
+    //void is_breakfast_eaten{
+    //  assertEquals(0, hunger);
+    //}
     //
     //
     //
