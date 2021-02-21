@@ -25,7 +25,7 @@ public class EvenMax {
             if (params.isEmpty()) {
                 return null;
             } else {
-                return params.stream().mapToInt(v -> v).max().orElseThrow(NoSuchElementException::new);
+                return params.stream().mapToInt(v -> v).max().getAsInt();
             }
         }
     }
