@@ -9,7 +9,7 @@ public class PseudoCode3 {
     //  pseudo code is "a notation resembling a simplified programming language, used in program design."
     //
     //todo A
-    // 1
+    // 1 This program will show
     // 2
     // 3
     // 4
@@ -25,7 +25,7 @@ public class PseudoCode3 {
 
 
     //todo B
-    // Write pseudo codo for 2 tests for your code
+    // Write pseudo code for 2 tests for your code
     //
     //
     //
