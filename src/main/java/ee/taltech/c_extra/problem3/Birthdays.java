@@ -2,6 +2,7 @@ package ee.taltech.c_extra.problem3;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -31,8 +32,10 @@ public class Birthdays {
     public static void main(String[] args) {
         LocalDate kristiinaBirthday = LocalDate.of(2001, Month.FEBRUARY, 22);
         LocalDate edvinBirthday = LocalDate.of(2001, Month.JUNE, 5);
-        LocalDate mihkelBirthday = LocalDate.of(2001, Month.NOVEMBER, 8);
+        LocalDate mihkelBirthday = LocalDate.of(2000, Month.NOVEMBER, 8);
         List<LocalDate> birthdays = List.of(kristiinaBirthday, edvinBirthday, mihkelBirthday);
+        LocalDate oldest = oldest(birthdays);
+        System.out.println(oldest.format(DateTimeFormatter.ofPattern("YYYY-MM-dd")));
     }
 
     /**
