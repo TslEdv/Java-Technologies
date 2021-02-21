@@ -1,5 +1,8 @@
 package ee.taltech.b_practise.assignment7;
 
+import org.apache.commons.lang3.ArrayUtils;
+
+import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -10,15 +13,8 @@ public class Fullname {
     //todo C use streams (extra)
 
     public static String fullname(String firstName, String lastName) {
-        if ((firstName.isEmpty() && lastName.isEmpty())|| (firstName.equals(null)&&lastName.equals(null))) {
-            return "";
-        } else if (lastName.equals("")||lastName.equals(null)) {
-            return firstName;
-        } else if (firstName.equals("")||firstName.equals(null)) {
-            return lastName;
-        } else {
-            return firstName + " " + lastName;
-        }
+        String name = new String();
+        return name = Stream.of(firstName, lastName).filter(Objects::nonNull).filter(e -> e.length() != 0).collect(Collectors.joining(" "));
     }
 
 
