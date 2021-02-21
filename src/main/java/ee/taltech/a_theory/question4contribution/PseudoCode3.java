@@ -9,30 +9,30 @@ public class PseudoCode3 {
     //  pseudo code is "a notation resembling a simplified programming language, used in program design."
     //
     //todo A
-    // 1 String food
-    // 2
-    // 3
-    // 4
+    // 1 go(shop);
+    // 2 lookaround(shop);
+    // 3 pick(items);
+    // 4 pay(money);
     // 5
-    // 6
-    // 7
-    // 8
-    // 9
-    // 10
-    // 11
-    // 12
-    //
+    // 6 while (true){
+    // 7    if(money==0){
+    // 8        break;}
+    // 9    else{
+    // 10       lookaround(shop);
+    // 11       pick(items);
+    // 12       pay(money);}
+    // 13 }
 
 
     //todo B
     // Write pseudo code for 2 tests for your code
+    //  @Test
+    // void money_left() {
+    //  assertEquals( 10, PseudoCode3.pay(20)); }
     //
-    //
-    //
-    //
-    //
-    //
-    //
+    // @Test
+    //  void found_item {
+    //  assertEquals("you have found something", PseudoCode3.lookaround(shop)); }
     //
     //
     //
