@@ -1,6 +1,7 @@
 package ee.taltech.c_extra.problem3;
 
 import java.time.LocalDate;
+import java.time.Month;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -28,25 +29,22 @@ public class Birthdays {
     // Print out the result (age in years).
 
     public static void main(String[] args) {
-        Calendar cal = Calendar.getInstance();
-        cal.set(Calendar.YEAR, 2001);
-        cal.set(Calendar.MONTH, 6);
-        cal.set(Calendar.DAY_OF_MONTH, 5);
-        Date edvinBirthday = cal.getTime();
-        cal.set(Calendar.MONTH, 2);
-        cal.set(Calendar.DAY_OF_MONTH, 22);
-        Date kristiinaBirthday = cal.getTime();
-        cal.set(Calendar.MONTH, 11);
-        cal.set(Calendar.DAY_OF_MONTH, 8);
-        cal.set(Calendar.YEAR, 2000);
-        Date mihkelBirthday = cal.getTime();
-
+        LocalDate kristiinaBirthday = LocalDate.of(2001, Month.FEBRUARY, 22);
+        LocalDate edvinBirthday = LocalDate.of(2001, Month.JUNE, 5);
+        LocalDate mihkelBirthday = LocalDate.of(2001, Month.NOVEMBER, 8);
+        List<LocalDate> birthdays = List.of(kristiinaBirthday, edvinBirthday, mihkelBirthday);
     }
 
     /**
      * returns the oldest/earliest date
      */
     public static LocalDate oldest(List<LocalDate> birthDays){
-        return null;
+        LocalDate oldest = LocalDate.now();
+        for (LocalDate birthDay : birthDays) {
+            if(birthDay.isBefore(oldest)){
+                oldest = birthDay;
+            }
+        }
+        return oldest;
     }
 }
