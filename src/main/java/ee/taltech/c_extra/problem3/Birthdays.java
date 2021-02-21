@@ -2,6 +2,7 @@ package ee.taltech.c_extra.problem3;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
@@ -36,6 +37,7 @@ public class Birthdays {
         List<LocalDate> birthdays = List.of(kristiinaBirthday, edvinBirthday, mihkelBirthday);
         LocalDate oldest = oldest(birthdays);
         System.out.println(oldest.format(DateTimeFormatter.ofPattern("YYYY-MM-dd")));
+        printAge(kristiinaBirthday);
     }
 
     /**
@@ -49,5 +51,10 @@ public class Birthdays {
             }
         }
         return oldest;
+    }
+    public static void printAge(LocalDate birthdate){
+        LocalDate now = LocalDate.now();
+        Period age = Period.between(birthdate, now);
+        System.out.println(age.getYears());
     }
 }
