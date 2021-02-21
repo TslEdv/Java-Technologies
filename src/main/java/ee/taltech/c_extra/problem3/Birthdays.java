@@ -1,6 +1,8 @@
 package ee.taltech.c_extra.problem3;
 
 import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class Birthdays {
@@ -9,7 +11,7 @@ public class Birthdays {
     // Great date API was added with Java 8.
     // New classes were added like LocalDate, Period and others.
     // What does API mean in this context?
-    // Answer:
+    // Answer: application programming interface. This API is used for getting date information from the operating system.
     //
     //
     //
@@ -26,6 +28,18 @@ public class Birthdays {
     // Print out the result (age in years).
 
     public static void main(String[] args) {
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.YEAR, 2001);
+        cal.set(Calendar.MONTH, 6);
+        cal.set(Calendar.DAY_OF_MONTH, 5);
+        Date edvinBirthday = cal.getTime();
+        cal.set(Calendar.MONTH, 2);
+        cal.set(Calendar.DAY_OF_MONTH, 22);
+        Date kristiinaBirthday = cal.getTime();
+        cal.set(Calendar.MONTH, 11);
+        cal.set(Calendar.DAY_OF_MONTH, 8);
+        cal.set(Calendar.YEAR, 2000);
+        Date mihkelBirthday = cal.getTime();
 
     }
 
