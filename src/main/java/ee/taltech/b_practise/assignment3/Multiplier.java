@@ -14,18 +14,13 @@ public class Multiplier {
     /**
      * multiplies each param element with multiplier
      */
-    public static List<Integer> multiplier(List<Integer> params, Integer multiplier)
-    {
-        if(params == null)
-        {
+    public static List<Integer> multiplier(List<Integer> params, Integer multiplier) {
+        if (params == null) {
             return List.of();
         }
-        if (multiplier == null)
-        {
+        if (multiplier == null) {
             return params;
         }
-
-
-        return params.stream().map(e->e*multiplier).collect(Collectors.toList());
+        return params.stream().map(e -> e * multiplier).collect(Collectors.toList());
     }
 }
