@@ -1,6 +1,7 @@
 package ee.taltech.b_practise.assignment4;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class PowerOf3 {
 
@@ -14,6 +15,12 @@ public class PowerOf3 {
      * multiplies each number to the power of three
      */
     public static List<Integer> toThePowerOfThree(List<Integer> params) {
-        return params;
+        if (params == null) {
+            return null;
+        }
+        if (params.isEmpty()) {
+            return List.of();
+        }
+        return params.stream().map(e -> e * e * e).collect(Collectors.toList());
     }
 }

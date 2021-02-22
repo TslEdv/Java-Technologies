@@ -23,6 +23,10 @@ class PowerOf3Test {
         assertEquals(List.of(-1, -8, -27), PowerOf3.toThePowerOfThree(List.of(-1, -2, -3)));
     }
 
+    @Test
+    void powerOf3_nullinput() {
+        assertEquals(null, PowerOf3.toThePowerOfThree(null));
+    }
     //todo B you decide what happens on null input, write a test and logic :)
     // don't worry about nulls inside the list (1, null, 3)
 }
