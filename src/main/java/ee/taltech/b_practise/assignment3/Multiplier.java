@@ -1,5 +1,6 @@
 package ee.taltech.b_practise.assignment3;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Multiplier {
@@ -12,7 +13,23 @@ public class Multiplier {
     /**
      * multiplies each param element with multiplier
      */
-    public static List<Integer> multiplier(List<Integer> params, Integer multiplier) {
-        return params;
+    public static List<Integer> multiplier(List<Integer> params, Integer multiplier)
+    {
+        if(params == null)
+        {
+            return List.of();
+        }
+        if (multiplier == null)
+        {
+            return params;
+        }
+
+        List<Integer> newlist = new ArrayList<>();
+
+        for (Integer param : params)
+        {
+            newlist.add(param * multiplier);
+        }
+        return newlist;
     }
 }
