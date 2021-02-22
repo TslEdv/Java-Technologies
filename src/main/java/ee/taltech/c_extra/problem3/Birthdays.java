@@ -4,8 +4,6 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 public class Birthdays {
@@ -43,16 +41,17 @@ public class Birthdays {
     /**
      * returns the oldest/earliest date
      */
-    public static LocalDate oldest(List<LocalDate> birthDays){
+    public static LocalDate oldest(List<LocalDate> birthDays) {
         LocalDate oldest = LocalDate.now();
         for (LocalDate birthDay : birthDays) {
-            if(birthDay.isBefore(oldest)){
+            if (birthDay.isBefore(oldest)) {
                 oldest = birthDay;
             }
         }
         return oldest;
     }
-    public static void printAge(LocalDate birthdate){
+
+    public static void printAge(LocalDate birthdate) {
         LocalDate now = LocalDate.now();
         Period age = Period.between(birthdate, now);
         System.out.println(age.getYears());

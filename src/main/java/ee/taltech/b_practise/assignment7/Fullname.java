@@ -13,8 +13,7 @@ public class Fullname {
     //todo C use streams (extra)
 
     public static String fullname(String firstName, String lastName) {
-        String name = new String();
-        return name = Stream.of(firstName, lastName).filter(Objects::nonNull).filter(e -> e.length() != 0).collect(Collectors.joining(" "));
+        return Stream.of(firstName, lastName).filter(Objects::nonNull).filter(e -> e.length() != 0).collect(Collectors.joining(" "));
     }
 
 

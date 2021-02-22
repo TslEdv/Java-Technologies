@@ -16,18 +16,17 @@ public class Filter {
      * divides integer input into positives and negatives
      * zero 0, can be treated as positive
      */
-    public static PositivesAndNegatives filterToPositivesAndNegatives(List<Integer> numbers){
-        if (numbers == null){
+    public static PositivesAndNegatives filterToPositivesAndNegatives(List<Integer> numbers) {
+        if (numbers == null) {
             throw new IllegalArgumentException("Invalid input");
         }
         PositivesAndNegatives positivesAndNegatives = new PositivesAndNegatives();
         List<Integer> positives = new ArrayList<>();
         List<Integer> negatives = new ArrayList<>();
         for (Integer number : numbers) {
-            if (number >= 0){
+            if (number >= 0) {
                 positives.add(number);
-            }
-            else {
+            } else {
                 negatives.add(number);
             }
         }
