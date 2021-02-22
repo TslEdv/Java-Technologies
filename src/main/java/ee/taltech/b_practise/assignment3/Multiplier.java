@@ -2,6 +2,7 @@ package ee.taltech.b_practise.assignment3;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Multiplier {
 
@@ -24,12 +25,7 @@ public class Multiplier {
             return params;
         }
 
-        List<Integer> newlist = new ArrayList<>();
 
-        for (Integer param : params)
-        {
-            newlist.add(param * multiplier);
-        }
-        return newlist;
+        return params.stream().map(e->e*multiplier).collect(Collectors.toList());
     }
 }
