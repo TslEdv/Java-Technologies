@@ -17,8 +17,7 @@ public class TooShort {
      * returns a list of string where length of a string is bigger than length (>)
      */
     public static List<String> filter(List<String> strings, int length) {
-        List<String> filtered = new ArrayList<>();
-        if (strings == null){
+        if (strings == null) {
             throw new IllegalArgumentException("Invalid input");
         }
         return strings.stream()

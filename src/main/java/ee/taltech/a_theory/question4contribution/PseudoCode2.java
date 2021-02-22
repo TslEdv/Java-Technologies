@@ -9,7 +9,7 @@ public class PseudoCode2 {
     //  pseudo code is "a notation resembling a simplified programming language, used in program design."
     //
     //todo A
-    // 1 String sushi = "crab";
+    // 1 String sushi = "crab sushi";
     // 2 order(sushi);
     // 3 eat(sushi);
     // 4 do(homework);

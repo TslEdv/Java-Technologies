@@ -6,7 +6,7 @@ public class Compilation {
     // in your own words (do not use wiki definitions)
     // What is compilation?
     // Answer:
-    //It's taking the code that is written (source code),
+    // It's taking the code that is written (source code),
     // and converting them into bytecode so Java VM will know what to do.
     //
     //
