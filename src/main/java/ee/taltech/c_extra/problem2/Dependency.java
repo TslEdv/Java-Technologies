@@ -10,7 +10,7 @@ public class Dependency {
 
     //todo B
     // In the context of A, can you explain in your words what is a dependency?
-    // Answer: it is a set of code that can be used for by other programs, ie this program depends on StringUtils because it uses code from it
+    // Answer: it is a set of code that can be used by other programs, i.e this program depends on StringUtils because it uses code from it
     //
     //
     //todo C
