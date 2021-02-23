@@ -14,11 +14,10 @@ public class Compilation {
     //todo B
     // Name 2 benefits of compilation?
     // Benefits:
-    // 1 you can write code and compile it on JVM and run it anywhere, if anyone wants to access it ,
-    // person needs to have JVM for that.
-    // 2 compiles easily on other operating systems, because Java bytecode runs anywhere where is its environment.
+    // 1 Program is self-contained, does not need anything external to run.
+    // 2 Source code cannot be extracted from the finished program.
     //todo C
     // Name 1 disadvantage of compilation?
     // Disadvantage:
-    // 1 Its not for free and takes longer to compile.
+    // 1 It takes time to compile.
 }

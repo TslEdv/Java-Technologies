@@ -18,7 +18,7 @@ public class PowerOf3 {
         if (params == null) {
             return null;
         }
-        if (params.isEmpty()) {
+        else if (params.isEmpty()) {
             return List.of();
         }
         return params.stream().map(e -> e * e * e).collect(Collectors.toList());

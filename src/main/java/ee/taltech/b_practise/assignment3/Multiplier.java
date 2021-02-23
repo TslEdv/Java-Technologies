@@ -18,7 +18,7 @@ public class Multiplier {
         if (params == null) {
             return List.of();
         }
-        if (multiplier == null) {
+        else if (multiplier == null) {
             return params;
         }
         return params.stream().map(e -> e * multiplier).collect(Collectors.toList());

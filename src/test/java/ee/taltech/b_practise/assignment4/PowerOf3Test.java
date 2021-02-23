@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 class PowerOf3Test {
 
@@ -25,7 +26,7 @@ class PowerOf3Test {
 
     @Test
     void powerOf3_nullinput() {
-        assertEquals(null, PowerOf3.toThePowerOfThree(null));
+        assertNull(PowerOf3.toThePowerOfThree(null));
     }
     //todo B you decide what happens on null input, write a test and logic :)
     // don't worry about nulls inside the list (1, null, 3)
